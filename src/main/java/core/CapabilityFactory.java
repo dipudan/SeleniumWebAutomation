@@ -16,6 +16,13 @@ public class CapabilityFactory {
             options.addArguments("--start-maximized");
             options.addArguments("--ignore-certificate-errors");
             options.addArguments("--disable-popup-blocking");
+
+            options.setCapability("os", "Windows");
+            options.setCapability("os_version", "10");
+            options.setCapability("browser", "Chrome");
+            options.setCapability("browser_version", "81");
+            options.setCapability("name", "dipukrishnan1's First Test");
+
             capabilities = options;
         } else {
             FirefoxOptions options = new FirefoxOptions();

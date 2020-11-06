@@ -3,7 +3,7 @@
 <suite name="Suite" parallel="methods" thread-count="3">
   <test thread-count="3" name="HomePageTestChrome" verbose="2">
     <parameter name="browser" value="chrome"/>
-    <parameter name="environment" value="local"/>
+    <parameter name="environment" value="Local"/>
     <classes>
       <class name="seleniumFramework.HomePageTestAsUserFactory"/>
     </classes>

@@ -36,12 +36,15 @@ public class BasePage {
 
 	protected static ThreadLocal<RemoteWebDriver> driver= new ThreadLocal<>();
 	private CapabilityFactory capabilityFactory = new CapabilityFactory();
+	public static final String USERNAME = "dipukrishnan1";
+	public static final String AUTOMATE_KEY = "";
+	public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 
 	@BeforeMethod
 	@Parameters({"browser","environment"})
 	public void launchBrowser (String strBrowser,String strEnvironment) throws MalformedURLException {
 		if(strEnvironment.equalsIgnoreCase("Local")){
-			driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),
+			driver.set(new RemoteWebDriver(new URL(URL),
 					capabilityFactory.getCapabilities(strBrowser)));
 		}else {
 			driver.set(new RemoteWebDriver(new URL("http://3.15.38.99:4444/wd/hub"),
