@@ -8,7 +8,7 @@
 		<maven.compiler.source>11</maven.compiler.source>
 		<maven.compiler.target>11</maven.compiler.target>
         <aspectj.version>1.9.4</aspectj.version>
-		<selenium.version>3.14.0</selenium.version>
+		<selenium.version>4.0.0-rc-1</selenium.version>
         <testNG.version>6.14.3</testNG.version>
         <selenium-support.version>4.0.0-alpha-2</selenium-support.version>
 		<jodd.version>5.1.0-20190624</jodd.version>
@@ -23,7 +23,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-server</artifactId>
+			<artifactId>selenium-java</artifactId>
 			<version>${selenium.version}</version>
 		</dependency>
 		<dependency>

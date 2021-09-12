@@ -5,7 +5,7 @@
     <parameter name="browser" value="chrome"/>
     <parameter name="environment" value="Local"/>
     <classes>
-      <class name="seleniumFramework.HomePageTestAsUserFactory"/>
+      <class name="seleniumFramework.HomePageTest"/>
     </classes>
   </test> <!-- Test -->
 <!--  <test thread-count="3" name="HomePageTestFirefox" verbose="2">
