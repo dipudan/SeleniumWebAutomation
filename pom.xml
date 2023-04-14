@@ -12,7 +12,7 @@
         <testNG.version>6.14.3</testNG.version>
         <selenium-support.version>4.0.0-alpha-2</selenium-support.version>
 		<jodd.version>5.1.0-20190624</jodd.version>
-		<json.version>20180813</json.version>
+		<json.version>20230227</json.version>
 		<allure-testng.version>2.0-BETA3</allure-testng.version>
 		<allure-maven.version>2.10.0</allure-maven.version>
 		<jaxb-api.version>2.3.0</jaxb-api.version>
